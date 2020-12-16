@@ -3,3 +3,4 @@ function Book (title, author, pages) {
     this.author = author;
     this.pages = pages;
 }
+
