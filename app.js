@@ -1,23 +1,41 @@
-import { Book } from "classes.js";
-// Array for books
-let mattsLibrary = [];
+// Library Array
+let library = [];
 
-// Selectors
-let addBookBtn = document.getElementById("add-book-btn");
-let titleList = document.getElementById("titles");
-let authorList = document.getElementById("authors");
-let pagesList = document.getElementById("pages");
+// Book Class
+class Book {
+    constructor() {
+        this.name = name;
+        this.author = author;
+        this.isRead = function () {
+        };
+    }
 
-// Function to add books on the UI
-function addBook() {
-  let userTitle = document.getElementById("title").value;  
-  let userAuthor = document.getElementById("author").value;  
-  let userPages = document.getElementById("page-number").value;  
-  let newTitleLi = document.createElement("li");
-  let newAuthorLi = document.createElement("li");
-  let newPagesLi = document.createElement("li");
-  let userBook = new Book(userTitle, userAuthor, userPages);
-  userBook.push(mattsLibrary);
-  console.log(mattsLibrary); 
+    addBookToLibrary() {
 
-} 
+    }
+
+    readOrNotRead() {
+
+    }
+
+    bookReadCounter() {
+
+    }
+
+    pagesReadCounter() {
+
+    }
+
+    deleteBook() {
+        alert("Are you sure you want to delete this book?")
+    }
+}
+
+// Selector
+const addBook = document.querySelector(".add-book-btn");
+const addBookPopUp = document.querySelector(".add-book-pop-up");
+const readStatus = document.querySelector("click-read");
+const removeBook = document.querySelector(".delete")
+
+// Listeners
+removeBook.addEventListener("click", deleteBook())

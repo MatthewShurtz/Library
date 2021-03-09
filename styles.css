@@ -1,11 +1,68 @@
 body {
   text-align: center;
+  background-color: whitesmoke;
 }
+
+.book-owned-read {
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  width: 170px;
+  height: 35px;
+  font-size: 20px;
+}
+
 li {
   list-style: none;
-  background-color: #fa9eaa;
 }
+
 .library-list {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  justify-content: space-around;
+  font-size: 24px;
+}
+
+.delete:hover {
+  background-color: rgb(253, 76, 76);
+}
+
+.pop-up-add-book {
+  position: fixed;
+  z-index: 1;
+  min-width: 350px;
+  padding: 4%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 0.2 ease-in-out;
+  background-color: grey;
+  border: 2px solid black;
+}
+
+.pop-up-add-book--active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+form {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+label > .pop-up-input {
+  font-size: 25px;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+}
+
+.click-read {
+  cursor: pointer;
+}
+
+.click-read:hover {
+  background-color: gray;
 }

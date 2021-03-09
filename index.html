@@ -8,23 +8,34 @@
 </head>
 <body>
     <header>
-        <h1>Matt's Library</h1>
+        <h1> Your Library</h1>
     </header>
-    <div class="book-input-div">
-<label>Title:<input type="text" placeholder="Book Title" id="title"></label>
-<label>Author:<input type="text" placeholder="Author" id="author"></label>
-<label>Pages:<input type="number" placeholder="#pages" id="page-number"></label>
-<button class="addbook" id="add-book-btn">Add Book</button>
+    <div class="book-owned-read">
+        <h2 class="books-in-lib">Books in Library: <span></span class="book-library-counter"span>43</span></h2>
+        <h2 class="books-read">Books Read: <span class="books-read-counter">30</span></h2>
+        <h2 class="books-read">Number of Pages Read: <span class="books-read-counter">2351</span></h2>
     </div>
+    <div class="pop-up-add-book">
+        <form>
+<label>Title:<input class="pop-up-input" type="text" placeholder="Book Title" id="title"></label>
+<label>Author:<input class="pop-up-input" type="text" placeholder="Author" id="author"></label>
+<label>Pages:<input class="pop-up-input" type="number" placeholder="#pages" id="page-number"></label>
+<button class="add-book-pop-up">Add</button>
+</form>
+    </div>
+<button class="add-book-btn" >Add a Book</button>
 <div class="library-list">
-<ul id="titles">Title:
-    <li>The Iliad</li>
+<ul class="titles">Title:
+    <li class="delete highlight-for-delete">The Iliad</li>
 </ul>
-<ul id="authors">Author:
-    <li>Homer</li>
+<ul class="authors">Author:
+    <li class="highlight-for-delete">Homer</li>
 </ul>
-<ul id="pages">Pages:
-<li>500</li>
+<ul class="pages">Pages:
+    <li class="highlight-for-delete">400</li>
+</ul>
+<ul class="book-read">Read:
+    <li class="click-read">Yes</li>
 </ul>
 </div>
 
